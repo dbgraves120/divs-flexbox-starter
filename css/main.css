@@ -102,37 +102,65 @@ html {
 }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
-  padding: 2em;
-  font-size: 1.25em;
-  height: 100%;
+    background-color: black;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 2em;
+    font-size: 1.25em;
+    height: 100%;
 }
 
-.wrapper {
-  /*add display:flex and set justify-content to space-between*/
-  background-color: black;
-  display: flex;
-  justify-content: space-between;
-  font-weight: 700;
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    max-width: 1200px;
 }
 
-.div-1, .div-2, .div-3 {
-  /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
+p span {
+    font-family: 'Lora', sans-serif;
+}
+header, footer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+header h1 {
+    font-family: 'Lora', sans-serif;
+    font-size: 3em;
+}
+main {
+  /*give the divs a width of 100%, add display:flex, set justify-content and align-items to center*/
   display: flex;
-  width: 30%;
+  width: 100%;
   justify-content: center;
   align-items: center;
-  color: white;
-  line-height: 1.5em;
-  font-size: 1.25em;
-  height: 300px;
-  padding-right: 15px;
-  border-right: 1px solid gray;
+  border-bottom: 1px solid #fff;
 } 
 
+main p {
+    font-size: 1.35em;
+}
 
+.flex-items {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5em;
+    font-size: 1em;
+    padding-right: 15px;
+    border-right: 1px solid gray;
+}
 
+#no-border {
+    border-right: 1px solid black;
+}
 
+footer {
+    border-bottom: 1px solid #fff;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
